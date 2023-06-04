@@ -5,6 +5,7 @@
  * Copyright 2011-2022 The Bootstrap Authors
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&family=DM+Serif+Display&display=swap");
 :root,
 [data-bs-theme=light] {
   --bs-blue: #0d6efd;
@@ -74,7 +75,7 @@
   --bs-black-rgb: 0, 0, 0;
   --bs-body-color-rgb: 33, 37, 41;
   --bs-body-bg-rgb: 255, 255, 255;
-  --bs-font-sans-serif: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --bs-font-sans-serif: "DM Sans", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
   --bs-body-font-family: var(--bs-font-sans-serif);
@@ -12334,11 +12335,12 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
+/* Custom Fonts from Google */
 /* Custom Styles */
 /* Post styles */
 .post p {
   font-size: 1.25rem;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
 }
 
 .post .figure-caption {
@@ -12349,13 +12351,21 @@ textarea.form-control-lg {
   font-size: 1rem;
 }
 
+.post .about {
+  font-size: 1rem;
+}
+
+.post h3, .post .h3 {
+  margin-top: 2.5rem;
+}
+
 /* stylelint-disable selector-list-comma-newline-after */
 .blog-header {
   border-bottom: 1px solid #e5e5e5;
 }
 
 .blog-header-logo {
-  font-family: "Playfair Display", Georgia, "Times New Roman", serif;
+  font-family: "DM Serif Display", "Playfair Display", Georgia, "Times New Roman", serif;
   font-size: 1.75rem;
 }
 
@@ -12364,7 +12374,7 @@ textarea.form-control-lg {
 }
 
 h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
-  font-family: "Playfair Display", Georgia, "Times New Roman", serif;
+  font-family: "DM Serif Display", serif;
 }
 
 .display-4 {
