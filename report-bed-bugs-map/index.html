@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en-US" data-bs-theme="dark">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <title>Bed Bug Registry Map | Report Bed Bugs - Bed Bug Survivors</title>
+    <link rel="icon" type="image/x-icon" href="/assets/img/favicon.png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="/assets/css/main.css">
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    />
+    
+    <!-- Custom styles for this template -->
+    <link href="https://fonts.googleapis.com/css?family=Playfair&#43;Display:700,900&amp;display=swap" rel="stylesheet">
+  
+    <!-- Google Adsense snippet -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1601020290533153"
+     crossorigin="anonymous"></script>
+
+    <!-- Google Analytics tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-282YMNXM2B"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-282YMNXM2B');
+    </script>
+
+  </head>
+
+  <!-- Start body -->
+  <body class="d-flex flex-column min-vh-100"><div class="container">
+  <nav class="navbar navbar-expand-lg rounded py-3" aria-label="main navigation">
+    <div class="container-fluid">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample11" aria-controls="navbarsExample11" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse d-lg-flex" id="navbarsExample11">
+        <a class="navbar-brand col-lg-3 me-0 blog-header-logo" href="/">Bed Bug Survivors</a>
+        <ul class="navbar-nav col-lg-6 justify-content-lg-center">
+          
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="/" >Home</a>
+          </li>
+          
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="/bed-bug-knowledge" >Bed Bug Knowledge</a>
+          </li>
+          
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="/report-bed-bugs-map/" class="active">Report Bed Bugs</a>
+          </li>
+          
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="/product-picks/" >Product Picks</a>
+          </li>
+          
+        </ul>  
+        <div class="d-lg-flex col-lg-3 justify-content-lg-end">
+          <a class="btn btn-light btn-sm rounded-pill" href="https://forms.gle/ZYF2ttxiucZQa6xW9" target="_blank">Share Your Story</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+</div><main class="flex-grow-1">
+      <div class="container">
+        <div class="container-fluid p-0 d-flex flex-column min-vh-100">
+  <div class="row g-0 flex-grow-1" style="min-height: 0;">
+    
+    <!-- Map Column -->
+    <div class="col-lg-8 col-md-7">
+      <div id="bug-map" style="height: 100%; width: 100%;"></div>
+    </div>
+
+    <!-- Sidebar Column -->
+    <div class="col-lg-4 col-md-5 bg-dark text-light d-flex flex-column">
+      <div class="p-4 border-bottom border-secondary">
+        <h5 class="text-white">Recent Bed Bug Reports</h5>
+        <p class="text-muted small">Zoom in on our map to view curated reports specific to your location of interest.</p>
+        <div class="my-3">
+          <button type="button" class="btn btn-outline-warning" data-bs-toggle="modal" data-bs-target="#reportModal">
+            Submit a Bed Bug Report
+          </button>
+        </div>
+        <div class="dropdown mb-3">
+          <a class="dropdown-toggle text-light text-decoration-none small" href="#" role="button" id="dateFilterDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+            Date: All Time
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="dateFilterDropdown">
+            <li><a class="dropdown-item date-filter-option active" href="#" data-range="all">All Time</a></li>
+            <li><a class="dropdown-item date-filter-option" href="#" data-range="30">Last 30 Days</a></li>
+            <li><a class="dropdown-item date-filter-option" href="#" data-range="180">Last 6 Months</a></li>
+            <li><a class="dropdown-item date-filter-option" href="#" data-range="365">Last Year</a></li>
+          </ul>
+        </div>
+        <p id="report-summary" class="text-light small mb-2">All reports shown</p>
+      </div>
+
+      <!-- Scrollable List -->
+      <div id="report-list" class="px-4 py-3 overflow-auto flex-grow-1"></div>
+
+      <!-- Pagination (if needed) -->
+      <div id="pagination-controls" class="text-center small text-light p-3"></div>
+    </div>
+
+  </div>
+</div>
+
+
+<!-- Modal -->
+<div class="modal fade" id="reportModal" tabindex="-1" aria-labelledby="reportModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-xl modal-dialog-centered">
+    <div class="modal-content bg-dark text-light border border-secondary">
+      <div class="modal-header">
+        <h5 class="modal-title" id="reportModalLabel">Submit a Bed Bug Report</h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body" style="height: 80vh;">
+        <iframe 
+          src="https://docs.google.com/forms/d/e/1FAIpQLSeQFOB2e4HZ5hPtkBfCMs928qtpUXEmjKle5AiPnukxdWPDLw/viewform?embedded=true" 
+          width="100%" 
+          height="100%" 
+          frameborder="0" 
+          marginheight="0" 
+          marginwidth="0">
+          Loading…
+        </iframe>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Leaflet JS (place before </body>) -->
+<script
+  src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js">
+</script>
+
+<script>
+  let currentPage = 1;
+  const pageSize = 10;
+
+  const map = L.map('bug-map').setView([39.8283, -98.5795], 4); // Center on USA
+
+  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    attribution: '&copy; OpenStreetMap contributors'
+  }).addTo(map);
+
+  const blueIcon = L.icon({
+    iconUrl: 'https://cdn.jsdelivr.net/npm/leaflet@1.9.4/dist/images/marker-icon.png',
+    shadowUrl: 'https://cdn.jsdelivr.net/npm/leaflet@1.9.4/dist/images/marker-shadow.png',
+    iconSize: [25, 41],
+    iconAnchor: [12, 41],
+    popupAnchor: [1, -34],
+    shadowSize: [41, 41]
+  });
+
+  const reports = [];
+
+  function updateSidebar() {
+    const bounds = map.getBounds();
+    const listEl = document.getElementById('report-list');
+    const summaryEl = document.getElementById('report-summary');
+    const paginationEl = document.getElementById('pagination-controls');
+    if (!listEl) return;
+
+    const now = new Date();
+    const filteredReports = [];
+
+    reports.forEach((r) => {
+      const latlng = r.marker.getLatLng();
+      const inBounds = bounds.contains(latlng);
+      const reportDate = new Date(r.data.date);
+      const daysAgo = (now - reportDate) / (1000 * 60 * 60 * 24);
+      const passesDateFilter =
+        currentDateFilter === 'all' || daysAgo <= parseInt(currentDateFilter);
+      const shouldShow = inBounds && passesDateFilter;
+
+      if (shouldShow) {
+        r.marker.addTo(map);
+        filteredReports.push(r);
+      } else {
+        map.removeLayer(r.marker);
+      }
+    });
+
+    const totalPages = Math.ceil(filteredReports.length / pageSize);
+    if (currentPage > totalPages) currentPage = 1;
+
+    const start = (currentPage - 1) * pageSize;
+    const paginatedReports = filteredReports.slice(start, start + pageSize);
+
+    // Update sidebar content
+    if (filteredReports.length === 0) {
+      listEl.innerHTML = `<div class="text-muted small fst-italic mt-3">No reports match this filter and view.</div>`;
+      if (summaryEl) summaryEl.textContent = `0 reports shown`;
+      paginationEl.innerHTML = '';
+    } else {
+      listEl.innerHTML = paginatedReports.map((r) => {
+        const { title, address, notes, date } = r.data;
+        const formattedDate = date ? new Date(date).toLocaleDateString() : 'Unknown date';
+
+        return `
+          <div class="mb-4">
+            <h6 class="text-light mb-1">${title || 'Unnamed Report'}</h6>
+            <small class="text-secondary d-block">${address || 'No address provided'}</small>
+            <small class="text-muted">${formattedDate}</small>
+            <p class="small mt-1 text-light">${notes || ''}</p>
+            <hr class="border-secondary">
+          </div>
+        `;
+      }).join('');
+
+      if (summaryEl) {
+        summaryEl.textContent = `${filteredReports.length} total report${filteredReports.length !== 1 ? 's' : ''}`;
+      }
+
+      // Add pagination controls
+      if (totalPages > 1) {
+        paginationEl.innerHTML = `
+          <div class="d-flex justify-content-center align-items-center gap-3">
+            <button class="btn btn-sm btn-outline-light" ${currentPage === 1 ? 'disabled' : ''} onclick="changePage(${currentPage - 1})"> Prev</button>
+            <span>Page ${currentPage} of ${totalPages}</span>
+            <button class="btn btn-sm btn-outline-light" ${currentPage === totalPages ? 'disabled' : ''} onclick="changePage(${currentPage + 1})">Next </button>
+          </div>
+        `;
+      } else {
+        paginationEl.innerHTML = '';
+      }
+    }
+  }
+
+  let currentDateFilter = 'all';
+
+  document.querySelectorAll('.date-filter-option').forEach(option => {
+    option.addEventListener('click', e => {
+      e.preventDefault();
+      
+      // Update active class
+      document.querySelectorAll('.date-filter-option').forEach(o => o.classList.remove('active'));
+      option.classList.add('active');
+
+      // Update button label
+      const label = option.textContent;
+      document.getElementById('dateFilterDropdown').textContent = `Filter by Date: ${label}`;
+
+      // Set filter and re-render
+      currentDateFilter = option.getAttribute('data-range');
+      updateSidebar();
+    });
+  });
+
+
+  fetch('/assets/data/reports.json')
+    .then(res => res.json())
+    .then(data => {
+      data.forEach(report => {
+        const marker = L.marker([report.lat, report.lng], { icon: blueIcon })
+          .addTo(map)
+          .bindPopup(`<strong>${report.title}</strong><br>${report.address}<br>${new Date(report.date).toLocaleDateString()}<br><small>${report.notes}</small>`);
+
+        reports.push({ marker, data: report });
+      });
+
+      updateSidebar();
+      map.on('moveend', updateSidebar);
+    })
+    .catch(err => console.error('Error loading report data:', err));
+
+  function changePage(newPage) {
+    currentPage = newPage;
+    updateSidebar();
+  }
+</script>
+
+
+      </div>
+    </main><div class="container">
+  <div class="d-flex flex-column flex-sm-row justify-content-between align-items-center py-4 my-4 text-muted">
+    <p class="mb-2 mb-sm-0 small">
+      © 2025 Bed Bug Survivors. All rights reserved.
+      <a href="/privacy-policy/" class="text-muted ms-3">Privacy Policy</a>
+      <a href="/contact/" class="text-muted ms-3">Contact</a>
+      <a href="/about" class="text-muted ms-3">About</a>
+    </p>
+    <ul class="list-unstyled d-flex mb-0">
+      <li class="ms-3">
+        <a class="link-secondary" href="#">
+          <svg class="bi" width="20" height="20"><use xlink:href="#instagram"></use></svg>
+        </a>
+      </li>
+    </ul>
+  </div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js">
+    </script>
+
+  </body>
+</html>

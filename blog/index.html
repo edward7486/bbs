@@ -7,13 +7,17 @@
     <link rel="icon" type="image/x-icon" href="/assets/img/favicon.png">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
     <link rel="stylesheet" href="/assets/css/main.css">
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    />
     
     <!-- Custom styles for this template -->
     <link href="https://fonts.googleapis.com/css?family=Playfair&#43;Display:700,900&amp;display=swap" rel="stylesheet">
   
     <!-- Google Adsense snippet -->
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1601020290533153"
-     crossorigin="anonymous"></script>  
+     crossorigin="anonymous"></script>
 
     <!-- Google Analytics tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-282YMNXM2B"></script>
@@ -28,7 +32,7 @@
   </head>
 
   <!-- Start body -->
-  <body><div class="container">
+  <body class="d-flex flex-column min-vh-100"><div class="container">
   <nav class="navbar navbar-expand-lg rounded py-3" aria-label="main navigation">
     <div class="container-fluid">
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample11" aria-controls="navbarsExample11" aria-expanded="false" aria-label="Toggle navigation">
@@ -37,70 +41,155 @@
 
       <div class="collapse navbar-collapse d-lg-flex" id="navbarsExample11">
         <a class="navbar-brand col-lg-3 me-0 blog-header-logo" href="/">Bed Bug Survivors</a>
-        <!-- <ul class="navbar-nav col-lg-6 justify-content-lg-center">
-          
-          <li class="nav-item">
-            <a class="nav-link" aria-current="page" href="/about/" >About</a>
-          </li>
-          
-        </ul>
-        -->
         <ul class="navbar-nav col-lg-6 justify-content-lg-center">
+          
           <li class="nav-item">
-            <a class="nav-link" aria-current="page" href="/about">About</a>
+            <a class="nav-link" aria-current="page" href="/" >Home</a>
           </li>
-          <!-- 
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Bed Bug Resources
-            </a>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#">Bed Bug Pictures and FAQ</a></li>
-              <li><a class="dropdown-item" href="#">Bed Bug Protection and Detection</a></li>
-              <li><a class="dropdown-item" href="#">Get Rid of Bed Bugs</a></li>
-            </ul>
-          </li>
-        -->
+          
           <li class="nav-item">
-            <a class="nav-link" aria-current="page" href="https://bedbugsurvivors.printify.me/products" target="_blank">Store</a>
+            <a class="nav-link" aria-current="page" href="/bed-bug-knowledge" >Bed Bug Knowledge</a>
           </li>
-        </ul>    
+          
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="/report-bed-bugs-map/" >Report Bed Bugs</a>
+          </li>
+          
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="/product-picks/" >Product Picks</a>
+          </li>
+          
+        </ul>  
         <div class="d-lg-flex col-lg-3 justify-content-lg-end">
           <a class="btn btn-light btn-sm rounded-pill" href="https://forms.gle/ZYF2ttxiucZQa6xW9" target="_blank">Share Your Story</a>
         </div>
       </div>
     </div>
   </nav>
-</div><div class="container">
-    
-      <main class="blog row justify-content-center" aria-label="Content">
+</div><main class="flex-grow-1">
+      <div class="container">
+        <main class="blog row justify-content-center" aria-label="Content">
   <div class="col-md-8">
     <h1 class="text-center">All Posts</h1>
 &nbsp;
 
-  <article class="blog-post">
-      <h3 class="mb-1"><a href="/2023/03/15/bed-bugs-amazon-packages.html" class="text-white text-decoration-none">You can get bed bugs from Amazon packages</a></h3>
-          <p class="blog-post-meta">15 March 2023 by Admin</p>
-          <p>Mark this as an unusual way to get bed bugs. A user on Reddit shared how they got bed bugs from ordering towels on Amazon.com. Recently, Amazon was forced to close down a 1 million square foot fulfilment center in Amarillo, Texas due to a bed bug infestation. It isn’t hard to imagine how bed bugs could find their way...</p>
-    </article>
 
-  <article class="blog-post">
-      <h3 class="mb-1"><a href="/2023/02/11/bed-bug-furniture-vigilant.html" class="text-white text-decoration-none">Be vigilant with used furniture and bed bugs</a></h3>
-          <p class="blog-post-meta">11 February 2023 by Admin</p>
-          <p>It is common knowledge that bed bugs get into your home by hitching a ride in. Per the New York State Department of Health: They can come from other infested areas or from used furniture. They can hitch a ride in luggage, purses, backpacks, or other items placed on soft or upholstered surfaces. NY State Department of Health This was...</p>
-    </article>
+<div class="card mb-5 border-1 rounded-3 bg-dark text-light overflow-hidden">
+  <div class="row g-0">
+    <div class="col-md-4">
+      <img src="/assets/img/post-photos/fancy-hotel-bed.jpg" class="img-fluid h-100 w-100 object-fit-cover" alt="Yes, my 4-star hotel had bed bugs">
+    </div>
+    <div class="col-md-8 d-flex flex-column justify-content-center p-4">
+      <h3 class="mb-2">
+        <a href="/2024/10/02/bed-bugs-four-star-hotel.html" class="text-white text-decoration-none">Yes, my 4-star hotel had bed bugs</a>
+      </h3>
+      <p class="text-muted small mb-2">
+        2 October 2024 by Anonymous Reader
+      </p>
+      <p class="mb-0 text-light">
+        I was in town for work, and the company booked me at a so-called 4-star hotel — clean lobby, fancy lighting, overpriced room service, the whole deal. Looked great at...
+      </p>
+    </div>
+  </div>
+</div>
 
-  <article class="blog-post">
-      <h3 class="mb-1"><a href="/2023/02/05/bed-bug-hot-shot-foggers.html" class="text-white text-decoration-none">Bed Bug Foggers didn't work for me</a></h3>
-          <p class="blog-post-meta">5 February 2023 by Admin</p>
-          <p>When I first discovered my bed bug infestation, one method that sounded promising to get rid of them was using a bed bug fogger. Release a fog and done, simple enough. What a naive way to think with bed bugs! I used the fogger three times and it never made a difference in my 400 sq ft. studio apartment. Notably,...</p>
-    </article>
+<div class="card mb-5 border-1 rounded-3 bg-dark text-light overflow-hidden">
+  <div class="row g-0">
+    <div class="col-md-4">
+      <img src="/assets/img/post-photos/couch-bed-bug.jpg" class="img-fluid h-100 w-100 object-fit-cover" alt="A free couch on Facebook Marketplace cost me over $1,200">
+    </div>
+    <div class="col-md-8 d-flex flex-column justify-content-center p-4">
+      <h3 class="mb-2">
+        <a href="/2024/09/24/facebook-marketplace-couch-bed-bugs.html" class="text-white text-decoration-none">A free couch on Facebook Marketplace cost me over $1,200</a>
+      </h3>
+      <p class="text-muted small mb-2">
+        24 September 2024 by Claire C.
+      </p>
+      <p class="mb-0 text-light">
+        Let me start with this: I was just trying to save a little money. I moved into a new apartment, and between rent, deposits, and bills, I didn’t have the...
+      </p>
+    </div>
+  </div>
+</div>
 
-  <article class="blog-post">
-      <h3 class="mb-1"><a href="/2023/01/18/bed-bugs-cimexa.html" class="text-white text-decoration-none">Is Cimexa the magic bed bug killer?</a></h3>
-          <p class="blog-post-meta">18 January 2023 by Admin</p>
-          <p>Note: This is not an endorsement of Cimexa. This is a story highlighting the success of Cimexa as a bed bug treatment. If you have used it before, we’d love to share your story. We believe consulting with a professional pest control team would be best and most safe if you are interested in using Cimexa. In 2011 when I...</p>
-    </article>
+<div class="card mb-5 border-1 rounded-3 bg-dark text-light overflow-hidden">
+  <div class="row g-0">
+    <div class="col-md-4">
+      <img src="/assets/img/post-photos/hot-shot-bed-bug-fogger.jpg" class="img-fluid h-100 w-100 object-fit-cover" alt="Bed bug foggers didn't work for me">
+    </div>
+    <div class="col-md-8 d-flex flex-column justify-content-center p-4">
+      <h3 class="mb-2">
+        <a href="/2024/08/12/bed-bug-hot-shot-foggers.html" class="text-white text-decoration-none">Bed bug foggers didn't work for me</a>
+      </h3>
+      <p class="text-muted small mb-2">
+        12 August 2024 by Anonymous Reader
+      </p>
+      <p class="mb-0 text-light">
+        I wanted to share my experience with bed bug foggers in case it helps someone else avoid wasting time (and money). When I first discovered bed bugs in my studio...
+      </p>
+    </div>
+  </div>
+</div>
+
+<div class="card mb-5 border-1 rounded-3 bg-dark text-light overflow-hidden">
+  <div class="row g-0">
+    <div class="col-md-4">
+      <img src="/assets/img/post-photos/claudio-schwarz-amazon-bed-bugs.jpg" class="img-fluid h-100 w-100 object-fit-cover" alt="You can get bed bugs from Amazon packages">
+    </div>
+    <div class="col-md-8 d-flex flex-column justify-content-center p-4">
+      <h3 class="mb-2">
+        <a href="/2023/03/15/bed-bugs-amazon-packages.html" class="text-white text-decoration-none">You can get bed bugs from Amazon packages</a>
+      </h3>
+      <p class="text-muted small mb-2">
+        15 March 2023 by Admin
+      </p>
+      <p class="mb-0 text-light">
+        Mark this as an unusual way to get bed bugs. A user on Reddit shared how they got bed bugs from ordering towels on Amazon.com. Recently, Amazon was forced to...
+      </p>
+    </div>
+  </div>
+</div>
+
+<div class="card mb-5 border-1 rounded-3 bg-dark text-light overflow-hidden">
+  <div class="row g-0">
+    <div class="col-md-4">
+      <img src="/assets/img/post-photos/andrea-davis-futon-bed-bugs.jpg" class="img-fluid h-100 w-100 object-fit-cover" alt="Be vigilant with used furniture and bed bugs">
+    </div>
+    <div class="col-md-8 d-flex flex-column justify-content-center p-4">
+      <h3 class="mb-2">
+        <a href="/2023/02/11/bed-bug-furniture-vigilant.html" class="text-white text-decoration-none">Be vigilant with used furniture and bed bugs</a>
+      </h3>
+      <p class="text-muted small mb-2">
+        11 February 2023 by Admin
+      </p>
+      <p class="mb-0 text-light">
+        It is common knowledge that bed bugs get into your home by hitching a ride in. Per the New York State Department of Health: They can come from other infested...
+      </p>
+    </div>
+  </div>
+</div>
+
+<div class="card mb-5 border-1 rounded-3 bg-dark text-light overflow-hidden">
+  <div class="row g-0">
+    <div class="col-md-4">
+      <img src="/assets/img/post-photos/cimexa-amazon-bed-bugs.png" class="img-fluid h-100 w-100 object-fit-cover" alt="Is Cimexa the magic bed bug killer?">
+    </div>
+    <div class="col-md-8 d-flex flex-column justify-content-center p-4">
+      <h3 class="mb-2">
+        <a href="/2023/01/18/bed-bugs-cimexa.html" class="text-white text-decoration-none">Is Cimexa the magic bed bug killer?</a>
+      </h3>
+      <p class="text-muted small mb-2">
+        18 January 2023 by Admin
+      </p>
+      <p class="mb-0 text-light">
+        Note: This is not an endorsement of Cimexa. This is a story highlighting the success of Cimexa as a bed bug treatment. If you have used it before, we’d love...
+      </p>
+    </div>
+  </div>
+</div>
+
+
+
 
 
 <!-- Pagination links -->
@@ -120,14 +209,27 @@
 </nav>
   </div>
 </main>
-    
-    </div><div class="container">
-  <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
-    <p>© 2023 Bed Bug Survivors. All rights reserved.</p>
-    <ul class="list-unstyled d-flex">
-      <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#instagram"></use></svg></a></li>
+      </div>
+    </main><div class="container">
+  <div class="d-flex flex-column flex-sm-row justify-content-between align-items-center py-4 my-4 text-muted">
+    <p class="mb-2 mb-sm-0 small">
+      © 2025 Bed Bug Survivors. All rights reserved.
+      <a href="/privacy-policy/" class="text-muted ms-3">Privacy Policy</a>
+      <a href="/contact/" class="text-muted ms-3">Contact</a>
+      <a href="/about" class="text-muted ms-3">About</a>
+    </p>
+    <ul class="list-unstyled d-flex mb-0">
+      <li class="ms-3">
+        <a class="link-secondary" href="#">
+          <svg class="bi" width="20" height="20"><use xlink:href="#instagram"></use></svg>
+        </a>
+      </li>
     </ul>
   </div>
-</div><script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js">
+    </script>
+
   </body>
 </html>

@@ -1,0 +1,110 @@
+[
+  {
+    "title": "Renaissance Nashville Hotel",
+    "address": "611 Commerce Street, Nashville, TN 37203",
+    "lat": 36.1608,
+    "lng": -86.7810,
+    "notes": "",
+    "date": "2023-07-19",
+    "type": "hotel"
+  },
+  {
+    "title": "Rodeway Inn & Suites",
+    "address": "2930 S 176th St, Seattle, WA 98188",
+    "lat": 47.4423,
+    "lng": -122.296,
+    "notes": "",
+    "date": "2023-07-19",
+    "type": "hotel"
+  },
+  {
+    "title": "Courtyard By Marriott Potomac Mills",
+    "address": "14300 Crossing Place, Woodbridge, VA 22192",
+    "lat": 38.6587,
+    "lng": -77.2579,
+    "notes": "",
+    "date": "2023-06-06",
+    "type": "hotel"
+  },
+  {
+    "title": "Victoria China Care Center",
+    "address": "555 Herald St, Victoria, BC V8W 1S5",
+    "lat": 48.4294,
+    "lng": -123.3656,
+    "notes": "",
+    "date": "2023-06-06",
+    "type": "care facility"
+  },
+  {
+    "title": "6303 Sebring St",
+    "address": "6303 Sebring St, Weeki Wachee, FL 34607",
+    "lat": 28.5096,
+    "lng": -82.6211,
+    "notes": "My poor mother was eaten alive while she was sleeping.",
+    "date": "2023-06-06",
+    "type": "apartment"
+  },
+  {
+    "title": "Great Wolf Lodge Water Park",
+    "address": "2501 Great Wolf Dr, Mason, OH 45040",
+    "lat": 39.3469,
+    "lng": -84.3041,
+    "notes": "",
+    "date": "2023-06-05",
+    "type": "hotel"
+  },
+  {
+    "title": "Comfort Suites",
+    "address": "1414 228th Street SE, Bothell, WA 98021",
+    "lat": 47.7890,
+    "lng": -122.2050,
+    "notes": "",
+    "date": "2023-06-05",
+    "type": "hotel"
+  },
+  {
+    "title": "Westin Dallas-Fort Worth Airport",
+    "address": "4545 W John Carpenter Fwy, Irving, TX 75063",
+    "lat": 32.8975,
+    "lng": -97.0404,
+    "notes": "",
+    "date": "2023-06-05",
+    "type": "hotel"
+  },
+  {
+    "title": "824 Martin Luther King Jr Way",
+    "address": "824 Martin Luther King Jr Way, Seattle, WA 98122",
+    "lat": 47.6097,
+    "lng": -122.2950,
+    "notes": "",
+    "date": "2023-06-04",
+    "type": "apartment"
+  },
+  {
+    "title": "1550 Queen St E",
+    "address": "1550 Queen St E, Toronto, ON M4L 1E9",
+    "lat": 43.6629,
+    "lng": -79.3237,
+    "notes": "Definitely bed bugs in this building.",
+    "date": "2023-06-04",
+    "type": "apartment"
+  },
+  {
+    "title": "725 W 70th Ave",
+    "address": "725 W 70th Ave, Vancouver, BC V6P 2X1",
+    "lat": 49.2095,
+    "lng": -123.1227,
+    "notes": "",
+    "date": "2023-06-04",
+    "type": "apartment"
+  },
+  {
+    "title": "Hawthorn Suites By Wyndham",
+    "address": "7645 Northwoods Blvd, North Charleston, SC 29406",
+    "lat": 32.9382,
+    "lng": -80.0480,
+    "notes": "",
+    "date": "2023-06-04",
+    "type": "hotel"
+  }
+]
