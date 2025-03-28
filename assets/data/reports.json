@@ -106,5 +106,32 @@
     "notes": "",
     "date": "2023-06-04",
     "type": "hotel"
+  },
+  {
+    "title": "Omaha Housing Authority Sued",
+    "address": "Omaha, NE",
+    "lat": 41.2565,
+    "lng": -95.9345,
+    "notes": "Lawsuit alleges severe and ongoing infestation.",
+    "date": "2025-01-06",
+    "type": "apartment",
+    "source": {
+      "label": "WOWT News",
+      "url": "https://www.wowt.com/2025/01/06/omaha-housing-authority-sued-again-over-intense-sustained-bed-bug-infestation"
+    }
+  },
+  {
+    "title": "Lawsuit Filed Against Sheraton Myrtle Beach",
+    "address": "Sheraton Myrtle Beach Convention Hotel, Myrtle Beach, SC",
+    "lat": 33.6949,
+    "lng": -78.8828,
+    "notes": "The suit was electronically filed in Horry County on Feb. 27, 2025 against the Sheraton Myrtle Beach Convention Hotel in downtown Myrtle Beach.",
+    "date": "2025-02-27",
+    "type": "hotel",
+    "source": {
+      "label": "News Report",
+      "url": "https://amp.myrtlebeachonline.com/news/local/article301168374.html"
+    }
   }
+
 ]

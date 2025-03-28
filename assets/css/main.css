@@ -12289,7 +12289,6 @@ textarea.form-control-lg {
 /* Custom Styles */
 /* Post styles */
 .post p {
-  font-size: 1.25rem;
   margin-bottom: 1rem;
 }
 
@@ -12310,7 +12309,6 @@ textarea.form-control-lg {
 }
 
 body p {
-  font-size: 20px;
   color: #FFF;
 }
 
@@ -12426,6 +12424,9 @@ img {
   #bug-map {
     min-height: 400px;
   }
+}
+a.footnote-back {
+  display: none;
 }
 
 /*# sourceMappingURL=main.css.map */
