@@ -132,6 +132,18 @@
       "label": "News Report",
       "url": "https://amp.myrtlebeachonline.com/news/local/article301168374.html"
     }
+  },
+  {
+    "title": "IU Health Bloomington",
+    "address": "2651 E Discovery Pkwy, Bloomington, IN 47408",
+    "lat": 39.1761,
+    "lng": -86.4891,
+    "notes": "If you notice the bedbug feces you can see that there is some sanitation issues.",
+    "date": "2025-03-27",
+    "type": "hospital",
+    "source": {
+      "label": "Reddit user",
+      "url": "https://www.reddit.com/r/Bedbugs/comments/1jlk17e/found_bedbugs_at_the_hospital/"
+    }
   }
-
 ]

@@ -2,6 +2,7 @@
 <html lang="en-US" data-bs-theme="dark">
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Bed Bug Survivors is a trusted resource for identifying, treating, and reporting bed bug infestations. Explore expert-backed product picks, real-world outbreak reports, and survival tips to reclaim your space.">
     <meta charset="utf-8">
     <title>Bed Bug Registry Map | Report Bed Bugs - Bed Bug Survivors</title>
     <link rel="icon" type="image/x-icon" href="/assets/img/favicon.png">
@@ -93,7 +94,7 @@
         <h5 class="text-white">Recent Bed Bug Reports</h5>
         <p class="text-muted small">Zoom in on our map to view curated reports specific to your location of interest.</p>
         <div class="my-3">
-          <button type="button" class="btn btn-outline-warning" data-bs-toggle="modal" data-bs-target="#reportModal">
+          <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#reportModal">
             Submit a Bed Bug Report
           </button>
         </div>
@@ -171,6 +172,13 @@
 
   const reports = [];
 
+  function formatLocalDate(dateString) {
+    const [year, month, day] = dateString.split('-');
+    const date = new Date(Number(year), Number(month) - 1, Number(day));
+    return date.toLocaleDateString();
+  }
+
+
   function updateSidebar() {
     const bounds = map.getBounds();
     const listEl = document.getElementById('report-list');
@@ -215,7 +223,7 @@
     } else {
       listEl.innerHTML = paginatedReports.map((r) => {
         const { title, address, notes, date, source } = r.data;
-        const formattedDate = date ? new Date(date).toLocaleDateString() : 'Unknown date';
+        const formattedDate = date ? formatLocalDate(date) : 'Unknown date';
 
         return `
           <div class="mb-4">
@@ -283,7 +291,7 @@
             .bindPopup(`
               <strong>${report.title}</strong><br>
               ${report.address}<br>
-              ${new Date(report.date).toLocaleDateString()}<br>
+              ${formatLocalDate(report.date)}<br>
               ${report.notes ? `<small>${report.notes}</small><br>` : ''}
               <em class="small">${sourceLink}</em>
             `);
