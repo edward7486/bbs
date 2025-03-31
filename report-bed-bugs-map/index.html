@@ -98,7 +98,14 @@
             Submit a Bed Bug Report
           </button>
         </div>
-        <div class="dropdown mb-3">
+        <p class="small mt-2">
+          <a href="/removal-request/" class="text-light text-decoration-underline">Request removal of an existing report</a>
+        </p>
+      </div>
+
+      <!-- Date Filter and Reports Count -->
+      <div class="d-flex justify-content-between align-items-center px-4 pt-3 pb-1 border-top border-secondary">
+        <div class="dropdown">
           <a class="dropdown-toggle text-light text-decoration-none small" href="#" role="button" id="dateFilterDropdown" data-bs-toggle="dropdown" aria-expanded="false">
             Date: All Time
           </a>
@@ -109,7 +116,7 @@
             <li><a class="dropdown-item date-filter-option" href="#" data-range="365">Last Year</a></li>
           </ul>
         </div>
-        <p id="report-summary" class="text-light small mb-2">All reports shown</p>
+        <p id="report-summary" class="text-light small mb-0">All reports shown</p>
       </div>
 
       <!-- Scrollable List -->
