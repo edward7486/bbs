@@ -2,18 +2,23 @@
 <html lang="en-US" data-bs-theme="dark">
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Bed Bug Survivors is a trusted resource for identifying, treating, and reporting bed bug infestations. Explore expert-backed product picks, real-world outbreak reports, and survival tips to reclaim your space.">
     <meta charset="utf-8">
     <title>Bed Bug Survivors | About - Bed Bug Survivors</title>
     <link rel="icon" type="image/x-icon" href="/assets/img/favicon.png">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
     <link rel="stylesheet" href="/assets/css/main.css">
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    />
     
     <!-- Custom styles for this template -->
     <link href="https://fonts.googleapis.com/css?family=Playfair&#43;Display:700,900&amp;display=swap" rel="stylesheet">
   
     <!-- Google Adsense snippet -->
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1601020290533153"
-     crossorigin="anonymous"></script>  
+     crossorigin="anonymous"></script>
 
     <!-- Google Analytics tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-282YMNXM2B"></script>
@@ -24,91 +29,121 @@
 
       gtag('config', 'G-282YMNXM2B');
     </script>
+    <!-- Ahrefs -->
+    <script src="https://analytics.ahrefs.com/analytics.js" data-key="93lq20F2tdCBF/f+mhyuNw" async></script>
 
   </head>
 
   <!-- Start body -->
-  <body><div class="container">
+  <body class="d-flex flex-column min-vh-100"><div class="container">
   <nav class="navbar navbar-expand-lg rounded py-3" aria-label="main navigation">
     <div class="container-fluid">
+
+      <!-- Brand always visible -->
+      <a class="navbar-brand me-3 text-nowrap" href="/">Bed Bug Survivors</a>
+
+      <!-- Toggler for mobile -->
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample11" aria-controls="navbarsExample11" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
 
-      <div class="collapse navbar-collapse d-lg-flex" id="navbarsExample11">
-        <a class="navbar-brand col-lg-3 me-0 blog-header-logo" href="/">Bed Bug Survivors</a>
-        <!-- <ul class="navbar-nav col-lg-6 justify-content-lg-center">
+      <!-- Collapsible nav -->
+      <div class="collapse navbar-collapse justify-content-between" id="navbarsExample11">
+        
+        <!-- Center Nav Items -->
+        <ul class="navbar-nav mx-auto">
           
           <li class="nav-item">
-            <a class="nav-link" aria-current="page" href="/about/" class="active">About</a>
+            <a class="nav-link" href="/">Home</a>
+          </li>
+          
+          <li class="nav-item">
+            <a class="nav-link" href="/bed-bug-knowledge">Bed Bug Knowledge</a>
+          </li>
+          
+          <li class="nav-item">
+            <a class="nav-link" href="/report-bed-bugs-map/">Report Bed Bugs</a>
+          </li>
+          
+          <li class="nav-item">
+            <a class="nav-link" href="/product-picks/">Product Picks</a>
           </li>
           
         </ul>
-        -->
-        <ul class="navbar-nav col-lg-6 justify-content-lg-center">
-          <li class="nav-item">
-            <a class="nav-link" aria-current="page" href="/about">About</a>
-          </li>
-          <!-- 
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Bed Bug Resources
-            </a>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#">Bed Bug Pictures and FAQ</a></li>
-              <li><a class="dropdown-item" href="#">Bed Bug Protection and Detection</a></li>
-              <li><a class="dropdown-item" href="#">Get Rid of Bed Bugs</a></li>
-            </ul>
-          </li>
-        -->
-          <li class="nav-item">
-            <a class="nav-link" aria-current="page" href="https://bedbugsurvivors.printify.me/products" target="_blank">Store</a>
-          </li>
-        </ul>    
-        <div class="d-lg-flex col-lg-3 justify-content-lg-end">
-          <a class="btn btn-light btn-sm rounded-pill" href="https://forms.gle/ZYF2ttxiucZQa6xW9" target="_blank">Share Your Story</a>
+
+        <!-- Right CTA -->
+        <div class="d-flex">
+          <a class="btn btn-light btn-sm rounded-pill text-nowrap" href="https://forms.gle/ZYF2ttxiucZQa6xW9" target="_blank">Share Your Story</a>
         </div>
       </div>
+
     </div>
   </nav>
-</div><div class="container">
-    
-      	<div class="row justify-content-center">
+</div>
+<main class="flex-grow-1">
+      <div class="container">
+        	<div class="row justify-content-center">
 	    
 	    <div class="col-md-8">
 			<h1 class="text-center">About</h1>
 <p> </p>
 
-<p><strong>Bed Bug Survivors</strong> is a site highlighting the human experience of dealing with bed bug infestations. We share stories with the intent of spreading knowledge and awareness on bed bugs.</p>
+<h2 id="about-bed-bug-survivors">About Bed Bug Survivors</h2>
 
-<p>I first encountered bed bugs from buying a used futon from Craigslist. It made my life in a tiny studio apartment a living hell. I know firsthand the physical and psychological toll bed bugs can have, even after they’re gone from your life. This site is my way of fighting against them over a decade later by sharing and passing along knowledge where I can.</p>
+<p>Bed Bug Survivors is dedicated to sharing the human experience of dealing with bed bug infestations. Our goal is to spread knowledge, awareness, and support for those who have encountered these relentless pests.</p>
 
-<h2 id="google-analytics">Google Analytics</h2>
-<p>We use Google Analytics on this site to understand site performance and how readers engage with our content.</p>
+<h2 id="our-story">Our Story</h2>
+
+<p>The inspiration for this site comes from my own personal battle with bed bugs. It all started when I unknowingly brought them into my tiny studio apartment by purchasing a used futon from Craigslist. What followed was an exhausting struggle that affected not just my home, but also my mental well-being. Even after eliminating the infestation, the psychological toll lingered. Over a decade later, this site serves as my way of fighting back—by educating others and providing a platform for survivors to share their stories.</p>
+
+<h2 id="how-we-use-google-analytics">How We Use Google Analytics</h2>
+
+<p>We use Google Analytics to track site performance and better understand how readers engage with our content. This helps us improve our articles, navigation, and overall user experience.</p>
 
 <h2 id="disclosure-policy">Disclosure Policy</h2>
-<p>This site generates income through Amazon’s affiliate program, Google Adsense (Google advertisements), and our online store powered by Printify (a print-on-demand service). If you click an affiliate link or ad banner and buy a product, you help support this website’s maintenance costs. We use Amazon due to its credibility and reputation in the eCommerce space.</p>
 
-<p>What we promise:</p>
-
+<p>Bed Bug Survivors generates revenue through affiliate marketing and advertisements, including:</p>
 <ul>
-  <li>We’ll only offer affiliate products that are relevant to the topic, bed bugs!</li>
-  <li>We will not recommend a product just for the sake of money, as bed bugs require the best products - not the ones that pay people to push them more.</li>
-  <li>We will not let the compensation received influence the content or opinions expressed here.</li>
-  <li>Just like our blog, this disclosure policy is a work in progress. As the revenue streams evolve, so will our policy disclosure.</li>
+  <li><strong>Amazon Associates Program</strong> – We may earn commissions on qualifying purchases made through Amazon links.</li>
+  <li><strong>Google Adsense</strong> – Advertisements placed throughout the site.</li>
+  <li><strong>Printify Store</strong> – A print-on-demand store offering related merchandise.</li>
 </ul>
 
+<h2 id="our-commitment-to-transparency">Our Commitment to Transparency</h2>
+<ul>
+  <li>We only promote products that are relevant to bed bug prevention, treatment, or awareness.</li>
+  <li>We will never recommend a product solely for financial gain—bed bug solutions must be effective, not just profitable.</li>
+  <li>Compensation does not influence the content, reviews, or opinions expressed on this site.</li>
+</ul>
+
+<p>Just like our blog, this disclosure policy will evolve as our revenue sources expand. We remain committed to honesty, transparency, and providing valuable information to our readers.</p>
+
+
 		</div>
+		
 	</div>
 
-    
-    </div><div class="container">
-  <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
-    <p>© 2023 Bed Bug Survivors. All rights reserved.</p>
-    <ul class="list-unstyled d-flex">
-      <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#instagram"></use></svg></a></li>
+      </div>
+    </main><div class="container">
+  <div class="d-flex flex-column flex-sm-row justify-content-between align-items-center py-4 my-4 text-muted">
+    <p class="mb-2 mb-sm-0 small">
+      © 2025 Bed Bug Survivors. All rights reserved.
+      <a href="/privacy-policy/" class="text-muted ms-3">Privacy Policy</a>
+      <a href="/contact/" class="text-muted ms-3">Contact</a>
+      <a href="/about" class="text-muted ms-3">About</a>
+    </p>
+    <ul class="list-unstyled d-flex mb-0">
+      <li class="ms-3">
+        <a class="link-secondary" href="#">
+          <svg class="bi" width="20" height="20"><use xlink:href="#instagram"></use></svg>
+        </a>
+      </li>
     </ul>
   </div>
-</div><script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js">
+    </script>
+
   </body>
 </html>
