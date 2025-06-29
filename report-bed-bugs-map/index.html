@@ -103,7 +103,7 @@
           </button>
         </div>
         <p class="small mt-2">
-          <a href="/removal-request/" class="text-light text-decoration-underline">Request removal of an existing report</a>
+          <a href="/removal-request/" class="text-light text-decoration-underline">Request removal of an existing bed bug report</a>
         </p>
       </div>
 
@@ -139,7 +139,7 @@
   <div class="modal-dialog modal-xl modal-dialog-centered">
     <div class="modal-content bg-dark text-light border border-secondary">
       <div class="modal-header">
-        <h5 class="modal-title" id="reportModalLabel">Submit a Bed Bug Report</h5>
+        <h2 class="modal-title h5" id="reportModalLabel">Submit a Bed Bug Report</h2>
         <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body" style="height: 80vh;">
@@ -238,7 +238,7 @@
 
         return `
           <div class="mb-4">
-            <h6 class="text-light mb-1">${title || 'Unnamed Report'}</h6>
+            <p class="text-light mb-1">${title || 'Unnamed Report'}</p>
             <small class="text-secondary d-block">${address || 'No address provided'}</small>
             <small class="text-muted d-block">${formattedDate}</small>
             <p class="small mt-1 text-light">${notes || ''}</p>
@@ -256,9 +256,9 @@
       if (totalPages > 1) {
         paginationEl.innerHTML = `
           <div class="d-flex justify-content-center align-items-center gap-3">
-            <button class="btn btn-sm btn-outline-light" ${currentPage === 1 ? 'disabled' : ''} onclick="changePage(${currentPage - 1})"> Prev</button>
+            <button class="btn btn-sm btn-outline-light" ${currentPage === 1 ? 'disabled' : ''} onclick="changePage(${currentPage - 1})" aria-label="Go to Previous Page">Previous</button>
             <span>Page ${currentPage} of ${totalPages}</span>
-            <button class="btn btn-sm btn-outline-light" ${currentPage === totalPages ? 'disabled' : ''} onclick="changePage(${currentPage + 1})">Next </button>
+            <button class="btn btn-sm btn-outline-light" ${currentPage === totalPages ? 'disabled' : ''} onclick="changePage(${currentPage + 1})" aria-label="Go to Next Page">Next </button>
           </div>
         `;
       } else {
