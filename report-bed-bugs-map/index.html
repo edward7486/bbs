@@ -232,21 +232,61 @@
       if (summaryEl) summaryEl.textContent = `0 reports shown`;
       paginationEl.innerHTML = '';
     } else {
-      listEl.innerHTML = paginatedReports.map((r) => {
-        const { title, address, notes, date, source } = r.data;
-        const formattedDate = date ? formatLocalDate(date) : 'Unknown date';
+        listEl.innerHTML = paginatedReports.map((r) => {
+          const { title, address, notes, date, source } = r.data;
+          const formattedDate = date ? formatLocalDate(date) : 'Unknown date';
+          const lat = r.marker.getLatLng().lat;
+          const lng = r.marker.getLatLng().lng;
 
-        return `
-          <div class="mb-4">
-            <p class="text-light mb-1">${title || 'Unnamed Report'}</p>
-            <small class="text-secondary d-block">${address || 'No address provided'}</small>
-            <small class="text-muted d-block">${formattedDate}</small>
-            <p class="small mt-1 text-light">${notes || ''}</p>
-            <hr class="border-secondary">
-          </div>
-        `;
-      }).join('');
+          return `
+            <div 
+              class="mb-4 report-entry"
+              data-lat="${lat}"
+              data-lng="${lng}"
+              style="cursor: pointer;"
+              tabindex="0"
+              role="link"
+              aria-label="Show details for ${title} on map. Details are also listed here."
+            >
+              <p class="text-light mb-1">${title || 'Unnamed Report'}</p>
+              <small class="text-secondary d-block">${address || 'No address provided'}, ${formattedDate}</small>
+              ${source && source.url && source.label ? 
+                `<small class="d-block">Source:
+                  <a href="${source.url}" target="_blank" rel="noopener" class="text-info text-decoration-none">
+                    ${source.label}
+                  </a>
+                </small>` 
+              : 
+                `<small class="d-block text-muted">Source: User Submitted</small>`
+              }
+              <p class="small mt-1 text-light">${notes || ''}</p>
+              <hr class="border-secondary">
+            </div>
+          `;
+        }).join('');
 
+        document.querySelectorAll('.report-entry').forEach(entry => {
+          entry.addEventListener('click', () => {
+            const lat = parseFloat(entry.getAttribute('data-lat'));
+            const lng = parseFloat(entry.getAttribute('data-lng'));
+
+            if (!isNaN(lat) && !isNaN(lng)) {
+              reports.forEach(r => {
+                const markerLatLng = r.marker.getLatLng();
+                if (markerLatLng.lat === lat && markerLatLng.lng === lng) {
+                  r.marker.openPopup();
+                }
+              });
+            }
+          });
+
+          entry.addEventListener('keydown', (e) => {
+            if (e.key === 'Enter' || e.key === ' ') {
+              e.preventDefault();
+              entry.click(); // triggers the same popup logic as a mouse click
+            }
+          });
+        });
 
       if (summaryEl) {
         summaryEl.textContent = `${filteredReports.length} total report${filteredReports.length !== 1 ? 's' : ''}`;
@@ -304,7 +344,7 @@
               ${report.address}<br>
               ${formatLocalDate(report.date)}<br>
               ${report.notes ? `<small>${report.notes}</small><br>` : ''}
-              <em class="small">${sourceLink}</em>
+              <em class="small">Source: ${sourceLink}</em>
             `);
 
         reports.push({ marker, data: report });
@@ -319,6 +359,7 @@
     currentPage = newPage;
     updateSidebar();
   }
+
 </script>
 
 

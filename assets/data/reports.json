@@ -1,5 +1,18 @@
 [
   {
+    "title": "Concorde Condominiums",
+    "address": "Brookline, Massachusetts",
+    "lat": 42.452940,
+    "lng": -71.373760,
+    "notes": "Disturbing 100K bed bugs believed to be in one unit; spreading infestation.",
+    "date": "2025-06-26",
+    "type": "apartment",
+    "source": {
+      "label": "Brookline News",
+      "url": "https://brookline.news/severe-bedbug-infestation-spreads-through-coolidge-corner-condo-building/"
+    }
+  },
+  {
     "title": "Renaissance Nashville Hotel",
     "address": "611 Commerce Street, Nashville, TN 37203",
     "lat": 36.1608,
@@ -142,7 +155,7 @@
     "date": "2025-03-27",
     "type": "hospital",
     "source": {
-      "label": "Reddit user",
+      "label": "Reddit Post",
       "url": "https://www.reddit.com/r/Bedbugs/comments/1jlk17e/found_bedbugs_at_the_hospital/"
     }
   }
