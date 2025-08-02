@@ -1,5 +1,44 @@
 [
   {
+    "title": "Jeannette Manor",
+    "address": "401 S 4th St, Jeannette, PA 15644",
+    "lat": 40.3281,
+    "lng": -79.6153,
+    "notes": "About 10% to 15% of the units were infested.",
+    "date": "2025-08-01",
+    "type": "apartment",
+    "source": {
+      "label": "TRIBLive",
+      "url": "https://triblive.com/local/westmoreland/bedbug-outbreak-disrupts-tenants-at-jeannette-high-rise/"
+    }
+  },
+  {
+    "title": "SpringHill Suites Tuckahoe",
+    "address": "109 Marbledale Rd, Tuckahoe, NY 10707",
+    "lat": 40.960835,
+    "lng": -73.825847,
+    "notes": "A Tuckahoe hotel has been sued over an alleged bed bug infestation that two guests claim was so severe that they continue to suffer great bodily and mental pain.",
+    "date": "2025-07-15",
+    "type": "Hotel",
+    "source": {
+      "label": "Westfair Business Journal",
+      "url": "https://westfaironline.com/courts/travelers-accuse-tuckahoe-hotel-of-bed-bug-infestation/"
+    }
+  },    
+  {
+    "title": "Seton Lancaster",
+    "address": "232 Gay Street, Lancaster, OH 43130",
+    "lat": 39.714356,
+    "lng": -82.599217,
+    "notes": "Seniors at an assisted living facility in Lancaster have been grappling with a persistent bed bug infestation for several weeks, leading to significant disruptions in their daily lives.",
+    "date": "2025-07-03",
+    "type": "Assisted Living Facility",
+    "source": {
+      "label": "ABC6",
+      "url": "https://abc6onyourside.com/news/lancaster-diocese-senior-living-bed-bug-infestation-borror-management-residents-isolated-pest-control-seton-square-ac-issues-investigation"
+    }
+  },  
+  {
     "title": "Concorde Condominiums",
     "address": "Brookline, Massachusetts",
     "lat": 42.452940,
