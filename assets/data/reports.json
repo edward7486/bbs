@@ -1,5 +1,31 @@
 [
   {
+    "title": "Bed Bugs found at Ohio EPA Offices",
+    "address": "50 W. Town St., Suite 700, Columbus, Ohio 43215",
+    "lat": 39.958321,
+    "lng": -83.003729,
+    "notes": "Bed bugs were first spotted in July, with professional treatment three times. More bed bugs were found at their offices on Monday morning.",
+    "date": "2025-08-11",
+    "type": "Office",
+    "source": {
+      "label": "WKBN First News 27",
+      "url": "https://www.wkbn.com/news/ohio/more-bed-bugs-found-at-ohio-epa-offices/"
+    }
+  },
+  {
+    "title": "Pete's Place Homeless Shelter",
+    "address": "2801 Cerrillos Road, Santa Fe, NM 87507",
+    "lat": 35.652946,
+    "lng": -106.002048,
+    "notes": "City sets up temporary homeless shelter while 'Pete's Place' building treated for bedbugs",
+    "date": "2025-08-04",
+    "type": "Homeless Shelter",
+    "source": {
+      "label": "Santa Fe New Mexican",
+      "url": "https://www.santafenewmexican.com/news/local_news/city-sets-up-temporary-homeless-shelter-while-petes-place-building-treated-for-bedbugs/article_f5ac54f5-49bb-42d6-a012-766637295735.html"
+    }
+  },
+  {
     "title": "Jeannette Manor",
     "address": "401 S 4th St, Jeannette, PA 15644",
     "lat": 40.3281,
